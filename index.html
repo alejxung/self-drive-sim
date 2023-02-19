@@ -2,15 +2,26 @@
 <html>
 
 <head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="src/style.css">
+	<title>Self-Driving Car - No Libraries</title>
 </head>
 
 <body>
-	<div id="app"></div>
-
-	<script src="src/index.js">
-	</script>
+	<canvas id="carCanvas"></canvas>
+	<div id="verticalButtons">
+		<button id="saveBtn">💾</button>
+		<button id="discardBtn">🗑️</button>
+	</div>
+	<canvas id="networkCanvas"></canvas>
+	
+	<script src="src/network.js"></script>
+	<script src="src/sensor.js"></script>
+	<script src="src/utils.js"></script>
+	<script src="src/road.js"></script>
+	<script src="src/controls.js"></script>
+	<script src="src/car.js"></script>	
+	<script src="src/main.js"></script>
 </body>
 
 </html>
